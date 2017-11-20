@@ -1,0 +1,18 @@
+{%extends "ballot/base.html"%}
+
+{% block content %}
+  <form action="{% url 'vote' %}" method="POST">
+    {% csrf_token %}
+    {% for cand in candidates %}
+      <div class="a_cand_div">
+        <p>Choice {{ forloop.counter }}</p>
+        <select name="rank_{{ forloop.counter }}_cand">
+          {% for cand2 in candidates %}
+            <option value="{{ cand2.pk }}">{{ cand2.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    {% endfor %}
+    <button>Cast Vote</button>
+  </form>
+{% endblock %}

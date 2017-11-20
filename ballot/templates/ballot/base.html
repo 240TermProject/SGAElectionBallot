@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>SGA Election</title>
+        <link rel="stylesheet" href="{% static 'css/ballot.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1 class=color-white>SGA Election</h1>
+            <h2 class=color-white>Preferential Vote</h2>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
