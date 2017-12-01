@@ -1,2 +1,2 @@
-11543: [1, <Candidate: Candi Johnson>], [2, <Candidate: Javarri Little>], [3, <Candidate: Jackie Goolsby>], [4, <Candidate: DaRon Turner>], [5, <Candidate: Ken Hall>], [6, <Candidate: Wynton Kirkpatrick>],
-18922: [1, <Candidate: Wynton Kirkpatrick>], [2, <Candidate: Ken Hall>], [3, <Candidate: DaRon Turner>], [4, <Candidate: Jackie Goolsby>], [5, <Candidate: Javarri Little>], [6, <Candidate: Candi Johnson>],
+59380: Candi Johnson, Javarri Little, Jackie Goolsby, DaRon Turner, Ken Hall, Wynton Kirkpatrick,
+01914: Wynton Kirkpatrick, Ken Hall, DaRon Turner, Jackie Goolsby, Javarri Little, Candi Johnson,

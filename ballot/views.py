@@ -39,13 +39,14 @@ def cast_votes(request):
                 new_vote.rank = final_rank
                 new_vote.candidate = Candidate.objects.get(pk=int(candidate_pk))
                 new_vote.save()
-                vote_list.append([new_vote.rank, new_vote.candidate])
+                vote_list.append([new_vote.rank, new_vote.candidate.name])
         vote_list.sort(key=lambda tup: tup[0])
         vote_list.insert(0, voter_id)
         with open('voter_data.txt', 'a') as voter_data:
             voter_data.write("%s: " % (vote_list[0]))
             for thing in vote_list[1:]:
-                voter_data.write("%s, " % (thing))
+                #voter_data.write("%d, %s | " % (thing[0], thing[1]))
+                voter_data.write("%s, " % (thing[1]))
             voter_data.write("\n")
 
         return HttpResponseRedirect(reverse("detail"))
