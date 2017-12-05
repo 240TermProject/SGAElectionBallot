@@ -13,3 +13,9 @@ class Vote(models.Model):
 
 class Voter(models.Model):
     globalID = models.CharField (max_length=200, null=False)
+
+class FormatedResultsRow(models.Model):
+    formated_row = models.CharField (max_length=1000, null=False)
+
+    def __str__(self):
+        return "%s" % self.formated_row
